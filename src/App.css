@@ -1,0 +1,15 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Ensure smooth transitions between sections */
+section {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
