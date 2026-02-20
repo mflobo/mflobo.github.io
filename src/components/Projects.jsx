@@ -4,26 +4,33 @@ const Projects = () => {
     const projectList = [
         {
             id: 1,
-            title: "Project Alpha",
-            description: "A high-octane action game focused on movement mechanics.",
-            tags: ["Unity", "C#", "Level Design"],
-            hasVideo: true,
-            hasPDF: true,
+            title: "Paw n' Shop",
+            description: "A cozy management game where you help furry adventurers gear up for their quests. Developed for a game jam with a wonderful team.",
+            tags: ["Godot", "gdscript", "Programming"],
+            embedCode: '<iframe src="https://itch.io/embed/3547754" height="167" frameborder="0" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://tobiassnordin.itch.io/paw-n-shop">Paw n\' Shop by Tobias.S.Nordin, birdfriends, Matheus Lobo, fightercover, Grimmintime</a></iframe>'
         },
         {
             id: 2,
-            title: "Project Beta",
-            description: "Atmospheric puzzle-platformer exploring environmental storytelling.",
-            tags: ["Unreal Engine", "Blueprints", "Sound Design"],
-            hasImages: true,
+            title: "Trash Bashers",
+            description: "An arcade-style action game developed during my studies at Future Games. Bash through waves of enemies and clean up the streets.",
+            tags: ["Unity", "C#", "Systems Design"],
+            embedCode: '<iframe height="167" frameborder="0" src="https://itch.io/embed/4047135" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://futuregames.itch.io/trash-bashers">Trash Bashers by Futuregames</a></iframe>'
         },
         {
             id: 3,
-            title: "Systems Framework",
-            description: "A modular inventory and crafting system for RPGs.",
-            tags: ["C++", "Architecture"],
-            hasPDF: true,
+            title: "Evillution",
+            description: "Craft potions, feed them to your monster thrall, observe their effects develop unpredictably in battle. Also developed during my studies at Future Games.",
+            tags: ["Unity", "C#", "Systems Design"],
+            hasImages: true,
+            imageSrc: "/evillution.png"
         }
+        // {
+        //     id: 4,
+        //     title: "Systems Framework",
+        //     description: "A modular inventory and crafting system for RPGs.",
+        //     tags: ["C++", "Architecture"],
+        //     hasPDF: true,
+        // }
     ];
 
     return (
@@ -42,10 +49,23 @@ const Projects = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            color: 'var(--text-secondary)'
+                            color: 'var(--text-secondary)',
+                            overflow: 'hidden'
                         }}>
-                            {/* This is where video/image will go later */}
-                            {project.hasVideo ? "[ Video Preview ]" : "[ Project Thumbnail ]"}
+                            {project.embedCode ? (
+                                <div
+                                    dangerouslySetInnerHTML={{ __html: project.embedCode }}
+                                    style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
+                                />
+                            ) : project.imageSrc ? (
+                                <img
+                                    src={project.imageSrc}
+                                    alt={project.title}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                            ) : (
+                                project.hasVideo ? "[ Video Preview ]" : "[ Project Thumbnail ]"
+                            )}
                         </div>
                         <div style={{ padding: '30px' }}>
                             <div style={{ display: 'flex', gap: '8px', marginBottom: '15px' }}>

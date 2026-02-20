@@ -40,11 +40,24 @@ const Navbar = () => {
         alignItems: 'center'
       }}>
         <a href="#" style={{
-          fontSize: '1.5rem',
-          fontWeight: 800,
-          fontFamily: 'var(--font-heading)'
-        }} className="text-gradient">
-          ML
+          display: 'flex',
+          alignItems: 'center',
+          transition: 'var(--transition)'
+        }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}>
+          <img
+            src="/favicon.png"
+            alt="ML Logo"
+            style={{
+              height: '40px',
+              width: '40px',
+              borderRadius: '50%',
+              border: '2px solid grey',
+              objectFit: 'contain',
+              padding: '2px',
+              backgroundColor: 'rgba(255, 255, 255, 0.1)' // subtle background to make it pop
+            }}
+          />
         </a>
         <ul style={{ display: 'flex', gap: '30px' }}>
           {navLinks.map((link) => (

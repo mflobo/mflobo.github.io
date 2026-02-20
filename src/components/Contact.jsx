@@ -40,17 +40,17 @@ const Contact = () => {
                 <div className="glass-card" style={{ padding: '40px' }}>
                     <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Contact Information</h3>
                     <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-                        I'm always open to new opportunities and collaborations. Feel free to reach out!
+                        I'm open to new opportunities and collaborations. Feel free to reach out!
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                         <a href="mailto:matheus.f.lobo@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
                             <span style={{ color: 'var(--accent-primary)' }}>📧</span> matheus.f.lobo@gmail.com
                         </a>
                         <div style={{ display: 'flex', gap: '20px', marginTop: '10px' }}>
-                            <a href="https://linkedin.com/in/matheuslobo" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/matheus-lobo-a59840173/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="LinkedIn">
                                 🔗 <span style={{ fontSize: '0.9rem' }}>LinkedIn</span>
                             </a>
-                            <a href="https://itch.io/profile/matheuslobo" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="itch.io">
+                            <a href="https://mflobo.itch.io/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="itch.io">
                                 🎮 <span style={{ fontSize: '0.9rem' }}>itch.io</span>
                             </a>
                         </div>
