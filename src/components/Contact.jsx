@@ -47,7 +47,7 @@ const Contact = () => {
                             <span style={{ color: 'var(--accent-primary)' }}>📧</span> matheus.f.lobo@gmail.com
                         </a>
                         <div style={{ display: 'flex', gap: '20px', marginTop: '10px' }}>
-                            <a href="https://www.linkedin.com/in/matheus-lobo-a59840173/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/mflobo/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="LinkedIn">
                                 🔗 <span style={{ fontSize: '0.9rem' }}>LinkedIn</span>
                             </a>
                             <a href="https://mflobo.itch.io/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem' }} title="itch.io">
