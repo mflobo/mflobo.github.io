@@ -20,7 +20,7 @@ const Projects = () => {
             id: 3,
             title: "Evillution",
             description: "Craft potions, feed them to your monster thrall, observe their effects develop unpredictably in battle. Also developed during my studies at Future Games.",
-            tags: ["Unity", "C#", "Systems Design"],
+            tags: ["Unity", "C#", "Mobile"],
             hasImages: true,
             imageSrc: "/evillution.png"
         }
