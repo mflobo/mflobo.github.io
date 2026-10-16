@@ -7,14 +7,16 @@ const Projects = () => {
             title: "Terminal_ Blonde",
             description: "A Y2K-inspired pseudo-hacking simulation game where oversharing is profitable and privacy is optional. Connect the dots, crack security questions, and scam your way to success.",
             tags: ["Game Design", "Simulation", "Puzzle"],
-            embedCode: '<iframe height="167" frameborder="0" src="https://itch.io/embed/5083613" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://futuregames.itch.io/terminalblonde">Terminal_ Blonde by Futuregames</a></iframe>'
+            embedCode: '<iframe height="167" frameborder="0" src="https://itch.io/embed/5083613" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://futuregames.itch.io/terminalblonde">Terminal_ Blonde by Futuregames</a></iframe>',
+            itchUrl: "https://futuregames.itch.io/terminalblonde"
         },
         {
             id: 2,
             title: "Trash Bashers",
             description: "An arcade-style action game developed during my studies at Future Games. Bash through waves of enemies and clean up the streets.",
             tags: ["Unity", "C#", "Systems Design"],
-            embedCode: '<iframe height="167" frameborder="0" src="https://itch.io/embed/4047135" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://futuregames.itch.io/trash-bashers">Trash Bashers by Futuregames</a></iframe>'
+            embedCode: '<iframe height="167" frameborder="0" src="https://itch.io/embed/4047135" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://futuregames.itch.io/trash-bashers">Trash Bashers by Futuregames</a></iframe>',
+            itchUrl: "https://futuregames.itch.io/trash-bashers"
         },
         {
             id: 3,
@@ -22,7 +24,8 @@ const Projects = () => {
             description: "Craft potions, feed them to your monster thrall, observe their effects develop unpredictably in battle. Also developed during my studies at Future Games.",
             tags: ["Unity", "C#", "Mobile"],
             hasImages: true,
-            imageSrc: "/evillution.png"
+            imageSrc: "/evillution.png",
+            itchUrl: "https://futuregames.itch.io/evillution"
         }
         // {
         //     id: 4,
@@ -87,7 +90,15 @@ const Projects = () => {
                                 {project.description}
                             </p>
                             <div style={{ display: 'flex', gap: '15px' }}>
-                                <button className="btn-primary" style={{ fontSize: '0.85rem', padding: '8px 20px' }}>View Details</button>
+                                <a
+                                    href={project.itchUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn-primary"
+                                    style={{ fontSize: '0.85rem', padding: '8px 20px', textDecoration: 'none' }}
+                                >
+                                    View Details
+                                </a>
                                 {project.hasPDF && (
                                     <button style={{
                                         fontSize: '0.85rem',
