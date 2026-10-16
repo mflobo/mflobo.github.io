@@ -4,10 +4,10 @@ const Projects = () => {
     const projectList = [
         {
             id: 1,
-            title: "Paw n' Shop",
-            description: "A cozy management game where you help furry adventurers gear up for their quests. Developed for a game jam with a wonderful team.",
-            tags: ["Godot", "gdscript", "Programming"],
-            embedCode: '<iframe src="https://itch.io/embed/3547754" height="167" frameborder="0" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://tobiassnordin.itch.io/paw-n-shop">Paw n\' Shop by Tobias.S.Nordin, birdfriends, Matheus Lobo, fightercover, Grimmintime</a></iframe>'
+            title: "Terminal_ Blonde",
+            description: "A Y2K-inspired pseudo-hacking simulation game where oversharing is profitable and privacy is optional. Connect the dots, crack security questions, and scam your way to success.",
+            tags: ["Game Design", "Simulation", "Puzzle"],
+            embedCode: '<iframe height="167" frameborder="0" src="https://itch.io/embed/5083613" width="552" style="border-radius: 8px; max-width: 100%;"><a href="https://futuregames.itch.io/terminalblonde">Terminal_ Blonde by Futuregames</a></iframe>'
         },
         {
             id: 2,
