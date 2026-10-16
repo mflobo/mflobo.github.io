@@ -6,7 +6,7 @@ const Projects = () => {
             id: 1,
             title: "Terminal_ Blonde",
             description: "A Y2K-inspired pseudo-hacking simulation game where oversharing is profitable and privacy is optional. Connect the dots, crack security questions, and scam your way to success.",
-            tags: ["Game Design", "Simulation", "Puzzle"],
+            tags: ["Unreal Engine 5", "Technical Design", "Blueprints"],
             imageSrc: "/terminalblonde.jpg",
             itchUrl: "https://futuregames.itch.io/terminalblonde"
         },
